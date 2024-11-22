@@ -14,18 +14,3 @@ wget https://glacier-labs.github.io/node-bootstrap/config.yaml
 
 # Open the config.yaml file for editing with nano
 nano config.yaml
-
-# Insert the example YAML content into the config.yaml file Your EVM Wallet Private Key
-
-cat <<EOL > config.yaml
-Http:
-  Listen: "127.0.0.1:10801"
-Network: "testnet"
-RemoteBootstrap: "https://glacier-labs.github.io/node-bootstrap/"
-Keystore:
-  PrivateKey: "YourPrivateKey"
-TEE:
-  IpfsURL: "https://greenfield.onebitdev.com/ipfs/"
-EOL
-
-echo "Example YAML content has been written to config.yaml."
